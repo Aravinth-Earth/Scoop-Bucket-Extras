@@ -4,6 +4,7 @@
     "description": "Gramps is a free software project and community, which is a genealogy program that is both intuitive for hobbyists and feature-complete for professional genealogists. It is a community project, created, developed and governed by genealogists.",
     "homepage": "https://gramps-project.org/blog/",
     "license": "GPL-2.0-or-later",
+    "notes" : "TODO -> To Be updated to portable version configurations",
     "architecture": {
         "64bit": {
             "url": "https://github.com/gramps-project/gramps/releases/download/v5.1.6/GrampsAIO-5.1.6-1_win64.exe",
