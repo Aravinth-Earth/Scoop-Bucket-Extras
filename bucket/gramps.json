@@ -1,0 +1,37 @@
+{
+    "##": "Please feel free to enhance this App-Manifest as needed.",
+    "version": "5.1.6",
+    "description": "Gramps is a free software project and community, which is a genealogy program that is both intuitive for hobbyists and feature-complete for professional genealogists. It is a community project, created, developed and governed by genealogists.",
+    "homepage": "https://gramps-project.org/blog/",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gramps-project/gramps/releases/download/v5.1.6/GrampsAIO-5.1.6-1_win64.exe",
+            "hash": "ddfc88946ad5af3adba399ff77111df25c3c6cea"
+        }
+    },
+    "bin": [
+        [
+            "gramps.exe",
+            "gramps"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "gramps.exe",
+            "gramps"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/gramps-project/gramps",
+        "url": "https://api.github.com/repos/gramps-project/gramps/tags",
+        "regex": "tags/v([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gramps-project/gramps/releases/download/v5.1.6/GrampsAIO-$version-1_win64.exe"
+            }
+        }
+    }
+}
